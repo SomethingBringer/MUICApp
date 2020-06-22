@@ -4,4 +4,5 @@
     <string name="about_app">This application is an attempt to test my personal skills in creating Material UI Components. You can use this samples as a reference for your work.</string>
     <string name="github">GitHub</string>
     <string name="about">About</string>
+    <string name="muic">Material UI Components</string>
 </resources>
