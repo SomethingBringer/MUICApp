@@ -40,8 +40,10 @@
         app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSamples"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingTop="@dimen/quarterDimen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider"

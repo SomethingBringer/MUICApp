@@ -9,29 +9,31 @@
 
     <ImageView
         android:id="@+id/ivCategoryIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
         android:layout_marginStart="@dimen/largeDimen"
+        android:layout_marginTop="@dimen/halfDimen"
         android:src="@drawable/ic_tap"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defDimen"
         android:layout_marginStart="@dimen/defDimen"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCategoryIcon"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Buttons" />
 
     <ImageView
+        android:id="@+id/ivArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="@dimen/defDimen"
         android:src="@drawable/ic_arrow_down"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivCategoryIcon">
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
