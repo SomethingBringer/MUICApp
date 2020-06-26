@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var navController: NavController
     lateinit var appBarConfiguration: AppBarConfiguration
-    val appComponent = DaggerAppComponent.create()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
