@@ -46,7 +46,7 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
             )
         }
         item.subList.forEach{
-            if (holder.itemView.llSubcategories.childCount>1){
+            if (holder.itemView.llSubcategories.childCount>0){
                 holder.itemView.llSubcategories.removeViewAt(0)
             }
         }
