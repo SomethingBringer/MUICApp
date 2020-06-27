@@ -5,4 +5,10 @@
     <string name="github">GitHub</string>
     <string name="about">About</string>
     <string name="muic">Material UI Components</string>
+    <string name="basic_buttons">Basic Buttons</string>
+    <string name="standard">Standard</string>
+    <string name="primary">Primary</string>
+    <string name="secondary">Secondary</string>
+    <string name="disabled">Disabled</string>
+    <string name="floating_action_buttons">Floating Action Buttons</string>
 </resources>
