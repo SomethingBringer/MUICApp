@@ -3,13 +3,13 @@ package com.example.android.muicapp.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.muicapp.ui.fragment.about.AboutViewModel
+import com.example.android.muicapp.ui.fragment.buttons.ButtonsBasicViewModel
 import com.example.android.muicapp.ui.fragment.samples.SamplesViewModel
 import com.example.android.muicapp.viewmodels.ViewModelKey
 import com.example.android.muicapp.viewmodels.ViewModelProviderFactory
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import javax.inject.Singleton
 
 @Module
 abstract class ViewModelFactoryModule(){
@@ -26,4 +26,9 @@ abstract class ViewModelFactoryModule(){
     @IntoMap
     @ViewModelKey(AboutViewModel::class)
     abstract fun bindAboutViewModel(viewModel: AboutViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ButtonsBasicViewModel::class)
+    abstract fun bindButtonsBasicViewModel(viewModel: ButtonsBasicViewModel): ViewModel
 }

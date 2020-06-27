@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.muicapp.MyApplication
@@ -25,7 +26,7 @@ class SamplesFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         (activity?.applicationContext as MyApplication).appComponent.inject(this)
-        viewModel = ViewModelProvider(this,providerFactory).get(SamplesViewModel::class.java)
+        viewModel = ViewModelProvider(this, providerFactory).get(SamplesViewModel::class.java)
         super.onCreate(savedInstanceState)
     }
 
@@ -34,9 +35,9 @@ class SamplesFragment : Fragment() {
         observeSamples()
     }
 
-    private fun observeSamples(){
+    private fun observeSamples() {
         viewModel.samplesList.observe(viewLifecycleOwner, Observer { list ->
-            if (list.isNotEmpty()){
+            if (list.isNotEmpty()) {
                 samplesAdapter.setData(list)
             }
         })
@@ -46,7 +47,7 @@ class SamplesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =inflater.inflate(R.layout.fragment_samples, container, false)
+        val view = inflater.inflate(R.layout.fragment_samples, container, false)
         return view
     }
 
@@ -57,7 +58,7 @@ class SamplesFragment : Fragment() {
         initClicks()
     }
 
-    private fun initAdapter(){
+    private fun initAdapter() {
         this.samplesAdapter = SamplesAdapter()
         rvSamples.apply {
             adapter = samplesAdapter
@@ -65,10 +66,13 @@ class SamplesFragment : Fragment() {
         }
     }
 
-    private fun initClicks(){
+    private fun initClicks() {
         samplesAdapter.setOnSelectClickListener { actionID ->
-            when(actionID){
-                ActionID.BUTTONS_BASIC -> Log.d("ACTION_ID",actionID.toString())
+            when (actionID) {
+                ActionID.BUTTONS_BASIC -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_buttonsBasicFragment)
+                }
             }
         }
     }

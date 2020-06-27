@@ -13,10 +13,20 @@
         <action
             android:id="@+id/action_samplesFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_buttonsBasicFragment"
+            app:destination="@id/buttonsBasicFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:popEnterAnim="@anim/fragment_open_enter" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.android.muicapp.ui.fragment.about.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/buttonsBasicFragment"
+        android:name="com.example.android.muicapp.ui.fragment.buttons.ButtonsBasicFragment"
+        android:label="Basic"
+        tools:layout="@layout/fragment_buttons_basic" />
 </navigation>
