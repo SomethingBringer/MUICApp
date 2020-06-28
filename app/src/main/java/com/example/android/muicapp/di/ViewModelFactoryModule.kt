@@ -3,7 +3,8 @@ package com.example.android.muicapp.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.muicapp.ui.fragment.about.AboutViewModel
-import com.example.android.muicapp.ui.fragment.buttons.ButtonsBasicViewModel
+import com.example.android.muicapp.ui.fragment.buttons.basic.ButtonsBasicViewModel
+import com.example.android.muicapp.ui.fragment.buttons.custom.ButtonsCustomViewModel
 import com.example.android.muicapp.ui.fragment.samples.SamplesViewModel
 import com.example.android.muicapp.viewmodels.ViewModelKey
 import com.example.android.muicapp.viewmodels.ViewModelProviderFactory
@@ -31,4 +32,9 @@ abstract class ViewModelFactoryModule(){
     @IntoMap
     @ViewModelKey(ButtonsBasicViewModel::class)
     abstract fun bindButtonsBasicViewModel(viewModel: ButtonsBasicViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ButtonsCustomViewModel::class)
+    abstract fun bindButtonsCustomViewModel(viewModel: ButtonsCustomViewModel): ViewModel
 }

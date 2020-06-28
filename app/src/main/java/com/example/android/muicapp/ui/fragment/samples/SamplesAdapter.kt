@@ -50,7 +50,7 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
                 holder.itemView.llSubcategories.removeViewAt(0)
             }
         }
-        item.subList.forEach {
+        item.subList.asReversed().forEach {
             val subcategory = it
             val layoutInflater = LayoutInflater.from(holder.itemView.context)
             val view = layoutInflater.inflate(
