@@ -11,4 +11,10 @@
     <string name="secondary">Secondary</string>
     <string name="disabled">Disabled</string>
     <string name="floating_action_buttons">Floating Action Buttons</string>
+    <string name="buttons_custom">Buttons Custom</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="accept">Accept</string>
+    <string name="retry">Retry</string>
+    <string name="click_for_more">Click for more</string>
 </resources>
