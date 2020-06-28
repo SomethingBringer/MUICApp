@@ -1,4 +1,4 @@
-package com.example.android.muicapp.ui.fragment.buttons
+package com.example.android.muicapp.ui.fragment.buttons.basic
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
