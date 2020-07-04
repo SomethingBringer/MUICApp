@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defDimen">16dp</dimen>
+    <dimen name="halfDimen">8dp</dimen>
+    <dimen name="quarterDimen">4dp</dimen>
+    <dimen name="largeDimen">24dp</dimen>
+    <dimen name="largestDimen">30dp</dimen>
+</resources>

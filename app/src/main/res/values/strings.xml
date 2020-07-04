@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MUICApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_app">This application is an attempt to test my personal skills in creating Material UI Components. You can use this samples as a reference for your work.</string>
+    <string name="github">GitHub</string>
+    <string name="about">About</string>
+    <string name="muic">Material UI Components</string>
+    <string name="basic_buttons">Basic Buttons</string>
+    <string name="standard">Standard</string>
+    <string name="primary">Primary</string>
+    <string name="secondary">Secondary</string>
+    <string name="disabled">Disabled</string>
+    <string name="floating_action_buttons">Floating Action Buttons</string>
+    <string name="buttons_custom">Buttons Custom</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="accept">Accept</string>
+    <string name="retry">Retry</string>
+    <string name="click_for_more">Click for more</string>
+</resources>

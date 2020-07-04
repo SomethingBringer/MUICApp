@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/halfDimen"
+            android:text="@string/basic_buttons" />
+
+        <View
+            style="@style/divider"
+            android:layout_marginStart="@dimen/halfDimen"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/halfDimen"
+            android:backgroundTint="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarterDimen"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/standard" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/primary" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorSecondary"
+            android:text="@string/secondary"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarterDimen"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/standard" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/primary"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/secondary"
+            android:textColor="@color/colorSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/quarterDimen"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/disabled" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/primary"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:text="@string/secondary"
+            android:textColor="@color/colorSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/halfDimen"
+            android:text="@string/floating_action_buttons" />
+
+        <View
+            style="@style/divider"
+            android:layout_marginStart="@dimen/halfDimen"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/halfDimen"
+            android:backgroundTint="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/halfDimen">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUMid"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:backgroundTint="@color/colorPrimary"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_add"
+            app:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUStart"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@android:color/white"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_pause_circle_outline"
+            app:elevation="10dp"
+            app:layout_constraintEnd_toStartOf="@id/fabUMid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/darker_gray" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUEnd"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_email"
+            app:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/fabUMid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/largeDimen"
+        android:paddingBottom="@dimen/quarterDimen">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMMid"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:backgroundTint="@color/colorPrimary"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_add"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMStart"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@android:color/white"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_pause_circle_outline"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toStartOf="@id/fabMMid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/darker_gray" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMEnd"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="@dimen/defDimen"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_email"
+            app:elevation="0dp"
+            app:layout_constraintStart_toEndOf="@id/fabMMid"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@android:color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
