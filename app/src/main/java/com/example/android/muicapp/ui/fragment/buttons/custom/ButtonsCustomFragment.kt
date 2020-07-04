@@ -20,7 +20,7 @@ class ButtonsCustomFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         (activity?.application as MyApplication).appComponent.inject(this)
-        viewModel = ViewModelProvider(this,providerFactory).get(ButtonsCustomViewModel::class.java)
+        viewModel = ViewModelProvider(this, providerFactory).get(ButtonsCustomViewModel::class.java)
         super.onCreate(savedInstanceState)
     }
 
