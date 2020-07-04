@@ -46,11 +46,11 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
             )
         }
         item.subList.forEach{
-            if (holder.itemView.llSubcategories.childCount>1){
+            if (holder.itemView.llSubcategories.childCount>0){
                 holder.itemView.llSubcategories.removeViewAt(0)
             }
         }
-        item.subList.forEach {
+        item.subList.asReversed().forEach {
             val subcategory = it
             val layoutInflater = LayoutInflater.from(holder.itemView.context)
             val view = layoutInflater.inflate(

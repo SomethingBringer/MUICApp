@@ -35,8 +35,8 @@ android {
 
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    def nav_version = "2.3.0-rc01"
-    def dagger_version = "2.21"
+    def nav_version = "2.3.0"
+    def dagger_version = "2.28.1"
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -54,5 +54,11 @@ dependencies {
     //dagger
     implementation "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
 }
