@@ -6,5 +6,6 @@ enum class CategoryID{
 
 enum class ActionID{
     BUTTONS_BASIC,
-    BUTTONS_CUSTOM
+    BUTTONS_CUSTOM,
+    BUTTONS_FAB
 }

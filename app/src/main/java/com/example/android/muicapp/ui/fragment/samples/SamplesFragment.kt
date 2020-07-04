@@ -77,6 +77,10 @@ class SamplesFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_samplesFragment_to_buttonsCustomFragment)
                 }
+                ActionID.BUTTONS_FAB -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_fabMoreActionsFragment)
+                }
             }
         }
     }

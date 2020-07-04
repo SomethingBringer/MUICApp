@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.android.muicapp.ui.fragment.about.AboutViewModel
 import com.example.android.muicapp.ui.fragment.buttons.basic.ButtonsBasicViewModel
 import com.example.android.muicapp.ui.fragment.buttons.custom.ButtonsCustomViewModel
+import com.example.android.muicapp.ui.fragment.buttons.fab.FabMoreActionsViewModel
 import com.example.android.muicapp.ui.fragment.samples.SamplesViewModel
 import com.example.android.muicapp.viewmodels.ViewModelKey
 import com.example.android.muicapp.viewmodels.ViewModelProviderFactory
@@ -13,7 +14,7 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 
 @Module
-abstract class ViewModelFactoryModule(){
+abstract class ViewModelFactoryModule() {
 
     @Binds
     internal abstract fun bind(factory: ViewModelProviderFactory): ViewModelProvider.Factory
@@ -37,4 +38,9 @@ abstract class ViewModelFactoryModule(){
     @IntoMap
     @ViewModelKey(ButtonsCustomViewModel::class)
     abstract fun bindButtonsCustomViewModel(viewModel: ButtonsCustomViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FabMoreActionsViewModel::class)
+    abstract fun bindFabMoreActionsViewModel(viewModel: FabMoreActionsViewModel): ViewModel
 }

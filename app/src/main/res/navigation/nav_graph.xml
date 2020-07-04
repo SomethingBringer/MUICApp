@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_samplesFragment_to_buttonsCustomFragment"
             app:destination="@id/buttonsCustomFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_fabMoreActionsFragment"
+            app:destination="@id/fabMoreActionsFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -37,4 +40,9 @@
         android:name="com.example.android.muicapp.ui.fragment.buttons.custom.ButtonsCustomFragment"
         android:label="Custom"
         tools:layout="@layout/fragment_buttons_custom" />
+    <fragment
+        android:id="@+id/fabMoreActionsFragment"
+        android:name="com.example.android.muicapp.ui.fragment.buttons.fab.FabMoreActionsFragment"
+        android:label="Fab more actions"
+        tools:layout="@layout/fragment_fab_more_actions" />
 </navigation>

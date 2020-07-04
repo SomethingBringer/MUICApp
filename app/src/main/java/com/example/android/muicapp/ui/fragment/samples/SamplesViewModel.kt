@@ -16,6 +16,7 @@ class SamplesViewModel @Inject constructor(): ViewModel() {
         val buttonsSublist = mutableListOf<SampleSubcategory>()
         buttonsSublist.add(SampleSubcategory("Basic", ActionID.BUTTONS_BASIC))
         buttonsSublist.add(SampleSubcategory("Custom", ActionID.BUTTONS_CUSTOM))
+        buttonsSublist.add(SampleSubcategory("Fab More Actions", ActionID.BUTTONS_FAB))
         val list = mutableListOf<SampleCategory>()
         list.add(
             SampleCategory("Buttons",CategoryID.BUTTONS,buttonsSublist)
