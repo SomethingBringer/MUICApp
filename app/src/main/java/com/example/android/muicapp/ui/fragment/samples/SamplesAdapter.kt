@@ -44,6 +44,12 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
                     R.drawable.ic_tap
                 )
             )
+            CategoryID.SLIDERS -> holder.itemView.ivCategoryIcon.setImageDrawable(
+                ContextCompat.getDrawable(
+                    holder.itemView.context,
+                    R.drawable.ic_sliders
+                )
+            )
         }
         item.subList.forEach{
             if (holder.itemView.llSubcategories.childCount>0){

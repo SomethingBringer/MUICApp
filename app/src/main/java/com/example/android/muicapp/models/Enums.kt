@@ -1,11 +1,15 @@
 package com.example.android.muicapp.models
 
 enum class CategoryID{
-    BUTTONS
+    BUTTONS,
+    SLIDERS
 }
 
 enum class ActionID{
     BUTTONS_BASIC,
     BUTTONS_CUSTOM,
-    BUTTONS_FAB
+    BUTTONS_FAB,
+    SLIDERS_LIGHT,
+    SLIDERS_DARK,
+    SLIDERS_SWITCH
 }

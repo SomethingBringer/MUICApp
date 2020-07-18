@@ -81,6 +81,18 @@ class SamplesFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_samplesFragment_to_fabMoreActionsFragment)
                 }
+                ActionID.SLIDERS_LIGHT -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_sliderLightFragment)
+                }
+                ActionID.SLIDERS_DARK -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_slidersDarkFragment)
+                }
+                ActionID.SLIDERS_SWITCH -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_fragmentSwitch)
+                }
             }
         }
     }
