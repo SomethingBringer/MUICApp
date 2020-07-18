@@ -24,6 +24,15 @@
         <action
             android:id="@+id/action_samplesFragment_to_fabMoreActionsFragment"
             app:destination="@id/fabMoreActionsFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_sliderLightFragment"
+            app:destination="@id/sliderLightFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_slidersDarkFragment"
+            app:destination="@id/slidersDarkFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_fragmentSwitch"
+            app:destination="@id/fragmentSwitch" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -45,4 +54,19 @@
         android:name="com.example.android.muicapp.ui.fragment.buttons.fab.FabMoreActionsFragment"
         android:label="Fab more actions"
         tools:layout="@layout/fragment_fab_more_actions" />
+    <fragment
+        android:id="@+id/sliderLightFragment"
+        android:name="com.example.android.muicapp.ui.fragment.sliders.SliderLightFragment"
+        android:label="Light"
+        tools:layout="@layout/fragment_slider_light" />
+    <fragment
+        android:id="@+id/slidersDarkFragment"
+        android:name="com.example.android.muicapp.ui.fragment.sliders.SlidersDarkFragment"
+        android:label="Dark"
+        tools:layout="@layout/fragment_sliders_dark" />
+    <fragment
+        android:id="@+id/fragmentSwitch"
+        android:name="com.example.android.muicapp.ui.fragment.switches.FragmentSwitch"
+        android:label="Switches"
+        tools:layout="@layout/fragment_switch" />
 </navigation>

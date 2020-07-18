@@ -7,15 +7,19 @@ import javax.inject.Provider
 import javax.inject.Singleton
 
 
-class ViewModelProviderFactory @Inject constructor(val creators: Map<Class<out ViewModel>, @JvmSuppressWildcards Provider<ViewModel>>): ViewModelProvider.Factory{
+class ViewModelProviderFactory @Inject constructor(
+    val creators: Map<Class<out ViewModel>,
+            @JvmSuppressWildcards Provider<ViewModel>>
+) :
+    ViewModelProvider.Factory {
 
-    companion object{
+    companion object {
         private val TAG = "VewModelProviderFactory"
     }
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         var creator = creators.get(modelClass)
-        if(creator == null){
+        if (creator == null) {
             for ((key, value) in creators.entries) {
 
                 if (modelClass.isAssignableFrom(key)) {
@@ -24,8 +28,8 @@ class ViewModelProviderFactory @Inject constructor(val creators: Map<Class<out V
                 }
             }
         }
-        if(creator == null){
-            throw IllegalArgumentException("unknown model class"+modelClass.toString())
+        if (creator == null) {
+            throw IllegalArgumentException("unknown model class" + modelClass.toString())
         }
         return try {
             creator.get() as T

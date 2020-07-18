@@ -17,4 +17,5 @@
     <string name="accept">Accept</string>
     <string name="retry">Retry</string>
     <string name="click_for_more">Click for more</string>
+    <string name="switch_text">Switch text</string>
 </resources>
