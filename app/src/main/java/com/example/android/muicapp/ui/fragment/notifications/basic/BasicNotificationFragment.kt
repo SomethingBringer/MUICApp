@@ -1,4 +1,4 @@
-package com.example.android.muicapp.ui.fragment.notifications
+package com.example.android.muicapp.ui.fragment.notifications.basic
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
