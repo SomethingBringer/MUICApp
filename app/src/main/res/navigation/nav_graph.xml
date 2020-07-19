@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_samplesFragment_to_toastFragment"
             app:destination="@id/toastFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_snackFragment"
+            app:destination="@id/snackFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -85,4 +88,9 @@
         android:name="com.example.android.muicapp.ui.fragment.notifications.toasts.ToastFragment"
         android:label="Toasts"
         tools:layout="@layout/fragment_toast" />
+    <fragment
+        android:id="@+id/snackFragment"
+        android:name="com.example.android.muicapp.ui.fragment.notifications.snacks.SnackFragment"
+        android:label="Snackbars"
+        tools:layout="@layout/fragment_snack" />
 </navigation>
