@@ -23,6 +23,7 @@ class SamplesViewModel @Inject constructor() : ViewModel() {
         slidersSubList.add(SampleSubcategory("Switches", ActionID.SLIDERS_SWITCH))
         val notificationSubList = mutableListOf<SampleSubcategory>()
         notificationSubList.add(SampleSubcategory("Basic", ActionID.NOTIFICATION_BASIC))
+        notificationSubList.add(SampleSubcategory("Toasts Custom", ActionID.NOTIFICATION_TOASTS))
         val list = mutableListOf<SampleCategory>()
         list.add(
             SampleCategory("Buttons", CategoryID.BUTTONS, buttonsSublist)

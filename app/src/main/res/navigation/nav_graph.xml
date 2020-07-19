@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_samplesFragment_to_basicNotificationFragment"
             app:destination="@id/basicNotificationFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_toastFragment"
+            app:destination="@id/toastFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -74,7 +77,12 @@
         tools:layout="@layout/fragment_switch" />
     <fragment
         android:id="@+id/basicNotificationFragment"
-        android:name="com.example.android.muicapp.ui.fragment.notifications.BasicNotificationFragment"
+        android:name="com.example.android.muicapp.ui.fragment.notifications.basic.BasicNotificationFragment"
         android:label="Basic"
         tools:layout="@layout/fragment_basic_notification" />
+    <fragment
+        android:id="@+id/toastFragment"
+        android:name="com.example.android.muicapp.ui.fragment.notifications.toasts.ToastFragment"
+        android:label="Toasts"
+        tools:layout="@layout/fragment_toast" />
 </navigation>

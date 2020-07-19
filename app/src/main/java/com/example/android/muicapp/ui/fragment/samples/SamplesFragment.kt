@@ -97,6 +97,10 @@ class SamplesFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_samplesFragment_to_basicNotificationFragment)
                 }
+                ActionID.NOTIFICATION_TOASTS -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_toastFragment)
+                }
             }
         }
     }
