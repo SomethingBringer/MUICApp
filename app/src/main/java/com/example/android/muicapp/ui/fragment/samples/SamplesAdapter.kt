@@ -50,9 +50,15 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
                     R.drawable.ic_sliders
                 )
             )
+            CategoryID.NOTIFICATION -> holder.itemView.ivCategoryIcon.setImageDrawable(
+                ContextCompat.getDrawable(
+                    holder.itemView.context,
+                    R.drawable.ic_smart_button
+                )
+            )
         }
-        item.subList.forEach{
-            if (holder.itemView.llSubcategories.childCount>0){
+        item.subList.forEach {
+            if (holder.itemView.llSubcategories.childCount > 0) {
                 holder.itemView.llSubcategories.removeViewAt(0)
             }
         }

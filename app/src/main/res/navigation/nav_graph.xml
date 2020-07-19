@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_samplesFragment_to_fragmentSwitch"
             app:destination="@id/fragmentSwitch" />
+        <action
+            android:id="@+id/action_samplesFragment_to_basicNotificationFragment"
+            app:destination="@id/basicNotificationFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -69,4 +72,9 @@
         android:name="com.example.android.muicapp.ui.fragment.switches.FragmentSwitch"
         android:label="Switches"
         tools:layout="@layout/fragment_switch" />
+    <fragment
+        android:id="@+id/basicNotificationFragment"
+        android:name="com.example.android.muicapp.ui.fragment.notifications.BasicNotificationFragment"
+        android:label="Basic"
+        tools:layout="@layout/fragment_basic_notification" />
 </navigation>
