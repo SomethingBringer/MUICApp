@@ -18,4 +18,12 @@
     <string name="retry">Retry</string>
     <string name="click_for_more">Click for more</string>
     <string name="switch_text">Switch text</string>
+    <string name="snackbars">Snackbars</string>
+    <string name="simple">Simple</string>
+    <string name="with_action">With action</string>
+    <string name="with_action_indefinite">With action indefinite</string>
+    <string name="toasts">Toasts</string>
+    <string name="custom">Custom</string>
+    <string name="custom_with_icon">Custom with icon</string>
+    <string name="custom_toast">Custom toast</string>
 </resources>
