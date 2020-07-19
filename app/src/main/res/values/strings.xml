@@ -38,4 +38,6 @@
     <string name="contact_added">Contact was added</string>
     <string name="toast_image_title">Toast with Android</string>
     <string name="toast_image_message">Well done!</string>
+    <string name="center">Center</string>
+    <string name="custom_snack_message">You have successfully summoned custom sncakbar with android! Well done!</string>
 </resources>
