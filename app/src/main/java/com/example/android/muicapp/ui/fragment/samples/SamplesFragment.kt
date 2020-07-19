@@ -93,6 +93,18 @@ class SamplesFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_samplesFragment_to_fragmentSwitch)
                 }
+                ActionID.NOTIFICATION_BASIC -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_basicNotificationFragment)
+                }
+                ActionID.NOTIFICATION_TOASTS -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_toastFragment)
+                }
+                ActionID.NOTIFICATION_SNACKS -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_snackFragment)
+                }
             }
         }
     }

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.fragment.notifications.basic.BasicNotificationFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tvSnack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/snackbars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btnSSimple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/simple"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSnack" />
+
+    <Button
+        android:id="@+id/btnSWithAction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/with_action"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSSimple" />
+
+    <Button
+        android:id="@+id/btnSIndefinite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/with_action_indefinite"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSWithAction" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider"
+        android:layout_width="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/defDimen"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSIndefinite" />
+
+    <TextView
+        android:id="@+id/tvToasts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:text="@string/toasts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <Button
+        android:id="@+id/btnTSimple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/simple"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvToasts" />
+
+    <Button
+        android:id="@+id/btnTCustom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/custom"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTSimple" />
+
+    <Button
+        android:id="@+id/btnTIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/ripple_rounded_stroke_button"
+        android:text="@string/custom_with_icon"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTCustom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

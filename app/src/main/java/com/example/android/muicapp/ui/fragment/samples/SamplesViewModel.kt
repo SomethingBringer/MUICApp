@@ -21,12 +21,19 @@ class SamplesViewModel @Inject constructor() : ViewModel() {
         slidersSubList.add(SampleSubcategory("Light", ActionID.SLIDERS_LIGHT))
         slidersSubList.add(SampleSubcategory("Dark", ActionID.SLIDERS_DARK))
         slidersSubList.add(SampleSubcategory("Switches", ActionID.SLIDERS_SWITCH))
+        val notificationSubList = mutableListOf<SampleSubcategory>()
+        notificationSubList.add(SampleSubcategory("Basic", ActionID.NOTIFICATION_BASIC))
+        notificationSubList.add(SampleSubcategory("Toasts Custom", ActionID.NOTIFICATION_TOASTS))
+        notificationSubList.add(SampleSubcategory("Snackbars Custom", ActionID.NOTIFICATION_SNACKS))
         val list = mutableListOf<SampleCategory>()
         list.add(
             SampleCategory("Buttons", CategoryID.BUTTONS, buttonsSublist)
         )
         list.add(
             SampleCategory("Sliders", CategoryID.SLIDERS, slidersSubList)
+        )
+        list.add(
+            SampleCategory("Snackbars & Toasts", CategoryID.NOTIFICATION, notificationSubList)
         )
         samplesList.postValue(list.toList())
     }
