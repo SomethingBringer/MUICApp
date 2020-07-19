@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.notifications.toasts.ToastFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Button
+        android:id="@+id/btnCardLight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/card_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+    <Button
+        android:id="@+id/btnCardDark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/card_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCardLight" />
+
+    <Button
+        android:id="@+id/btnCardImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/card_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCardDark" />
+
+    <Button
+        android:id="@+id/btnError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCardImage" />
+
+    <Button
+        android:id="@+id/btnSuccess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnError" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defDimen"
+        android:layout_marginTop="@dimen/halfDimen"
+        android:layout_marginEnd="@dimen/defDimen"
+        android:backgroundTint="@android:color/white"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/defDimen"
+        android:text="@string/info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSuccess" />
+</androidx.constraintlayout.widget.ConstraintLayout>
