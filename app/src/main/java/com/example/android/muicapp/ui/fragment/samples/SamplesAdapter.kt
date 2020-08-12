@@ -56,6 +56,12 @@ class SamplesAdapter : RecyclerView.Adapter<SamplesAdapter.ViewHolder>() {
                     R.drawable.ic_smart_button
                 )
             )
+            CategoryID.BOTTOM_NAVIGATION -> holder.itemView.ivCategoryIcon.setImageDrawable(
+                ContextCompat.getDrawable(
+                    holder.itemView.context,
+                    R.drawable.ic_baseline_line_weight
+                )
+            )
         }
         item.subList.forEach {
             if (holder.itemView.llSubcategories.childCount > 0) {

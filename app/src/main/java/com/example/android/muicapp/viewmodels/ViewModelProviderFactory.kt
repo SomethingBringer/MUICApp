@@ -7,6 +7,7 @@ import javax.inject.Provider
 import javax.inject.Singleton
 
 
+@Suppress("UNCHECKED_CAST")
 class ViewModelProviderFactory @Inject constructor(
     val creators: Map<Class<out ViewModel>,
             @JvmSuppressWildcards Provider<ViewModel>>

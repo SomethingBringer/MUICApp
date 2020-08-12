@@ -3,7 +3,8 @@ package com.example.android.muicapp.models
 enum class CategoryID {
     BUTTONS,
     SLIDERS,
-    NOTIFICATION
+    NOTIFICATION,
+    BOTTOM_NAVIGATION
 }
 
 enum class ActionID {
@@ -15,5 +16,8 @@ enum class ActionID {
     SLIDERS_SWITCH,
     NOTIFICATION_BASIC,
     NOTIFICATION_TOASTS,
-    NOTIFICATION_SNACKS
+    NOTIFICATION_SNACKS,
+    BOTTOM_NAVIGATION_SIMPLE,
+    BOTTOM_NAVIGATION_FAB,
+    BOTTOM_NAVIGATION_CUSTOM
 }
