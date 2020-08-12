@@ -105,6 +105,18 @@ class SamplesFragment : Fragment() {
                     findNavController()
                         .navigate(R.id.action_samplesFragment_to_snackFragment)
                 }
+                ActionID.BOTTOM_NAVIGATION_SIMPLE -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_BNSimpleFragment)
+                }
+                ActionID.BOTTOM_NAVIGATION_FAB -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_BNFabFragment)
+                }
+                ActionID.BOTTOM_NAVIGATION_CUSTOM -> {
+                    findNavController()
+                        .navigate(R.id.action_samplesFragment_to_BNCustomFragment)
+                }
             }
         }
     }

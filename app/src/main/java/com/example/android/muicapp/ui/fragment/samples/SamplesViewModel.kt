@@ -25,6 +25,10 @@ class SamplesViewModel @Inject constructor() : ViewModel() {
         notificationSubList.add(SampleSubcategory("Basic", ActionID.NOTIFICATION_BASIC))
         notificationSubList.add(SampleSubcategory("Toasts Custom", ActionID.NOTIFICATION_TOASTS))
         notificationSubList.add(SampleSubcategory("Snackbars Custom", ActionID.NOTIFICATION_SNACKS))
+        val bottomNavigationSubList = mutableListOf<SampleSubcategory>()
+        bottomNavigationSubList.add(SampleSubcategory("Simple", ActionID.BOTTOM_NAVIGATION_SIMPLE))
+        bottomNavigationSubList.add(SampleSubcategory("Fab", ActionID.BOTTOM_NAVIGATION_FAB))
+        bottomNavigationSubList.add(SampleSubcategory("Custom", ActionID.BOTTOM_NAVIGATION_CUSTOM))
         val list = mutableListOf<SampleCategory>()
         list.add(
             SampleCategory("Buttons", CategoryID.BUTTONS, buttonsSublist)
@@ -34,6 +38,13 @@ class SamplesViewModel @Inject constructor() : ViewModel() {
         )
         list.add(
             SampleCategory("Snackbars & Toasts", CategoryID.NOTIFICATION, notificationSubList)
+        )
+        list.add(
+            SampleCategory(
+                "Bottom Navigation",
+                CategoryID.BOTTOM_NAVIGATION,
+                bottomNavigationSubList
+            )
         )
         samplesList.postValue(list.toList())
     }

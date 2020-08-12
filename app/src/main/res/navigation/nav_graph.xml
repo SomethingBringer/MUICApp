@@ -9,7 +9,7 @@
         android:id="@+id/samplesFragment"
         android:name="com.example.android.muicapp.ui.fragment.samples.SamplesFragment"
         android:label="Samples"
-        tools:layout="@layout/fragment_samples" >
+        tools:layout="@layout/fragment_samples">
         <action
             android:id="@+id/action_samplesFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
@@ -42,6 +42,15 @@
         <action
             android:id="@+id/action_samplesFragment_to_snackFragment"
             app:destination="@id/snackFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_BNSimpleFragment"
+            app:destination="@id/BNSimpleFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_BNFabFragment"
+            app:destination="@id/BNFabFragment" />
+        <action
+            android:id="@+id/action_samplesFragment_to_BNCustomFragment"
+            app:destination="@id/BNCustomFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -93,4 +102,19 @@
         android:name="com.example.android.muicapp.ui.fragment.notifications.snacks.SnackFragment"
         android:label="Snackbars"
         tools:layout="@layout/fragment_snack" />
+    <fragment
+        android:id="@+id/BNSimpleFragment"
+        android:name="com.example.android.muicapp.ui.fragment.bottom_navigation.BNSimpleFragment"
+        android:label="Simple"
+        tools:layout="@layout/fragment_b_n_simple" />
+    <fragment
+        android:id="@+id/BNFabFragment"
+        android:name="com.example.android.muicapp.ui.fragment.bottom_navigation.BNFabFragment"
+        android:label="FAB"
+        tools:layout="@layout/fragment_b_n_fab" />
+    <fragment
+        android:id="@+id/BNCustomFragment"
+        android:name="com.example.android.muicapp.ui.fragment.bottom_navigation.BNCustomFragment"
+        android:label="Custom"
+        tools:layout="@layout/fragment_b_n_custom" />
 </navigation>
