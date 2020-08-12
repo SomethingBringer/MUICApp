@@ -18,4 +18,30 @@
         <item name="android:background">@color/divider</item>
     </style>
 
+    <style name="TextAppearance.HeadLine" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/amiri_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="TextAppearance.Lead" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/amiri_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="TextAppearance.Regular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/amiri</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="TextAppearance.Label" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/amiri</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_grey</item>
+    </style>
+
 </resources>

@@ -40,4 +40,12 @@
     <string name="toast_image_message">Well done!</string>
     <string name="center">Center</string>
     <string name="custom_snack_message">You have successfully summoned custom sncakbar with android! Well done!</string>
+    <string name="top_rating">Top Rating</string>
+    <string name="more">More</string>
+    <string name="afterburner">Afterburner</string>
+    <string name="dance_gavin_dance">Dance Gavin Dance</string>
+    <string name="posthardcore">posthardcore</string>
+    <string name="recommended">Recommended</string>
+    <string name="new_releases">New Releases</string>
+    <string name="source_domain_com">Source: Domain.com</string>
 </resources>
